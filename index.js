@@ -112,6 +112,7 @@ function verifySequence() {
                 // same sequence, reset player
                 playerSequence = [];
                 level += 1;
+                $("h1").text(`Level ${level}`);
                 setTimeout(addSequence, interval);
                 return;
             } else {
